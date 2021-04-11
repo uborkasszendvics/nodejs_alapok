@@ -1,3 +1,5 @@
+let lib = require("./lib.js");
+
 // Egysoros komment
 
 /*
@@ -38,61 +40,8 @@ function negyzet(x) {
     return x * x;
 }
 
-
-function terulet(a, b) {
-    return a * b;
-}
-
-
-function szohossz(n) {
-//    if (condition) {
-//        
-//    } else if () {
-//        
-//    } else if () {
-//
-//    } else {
-//        
-//    }
-
-try {
-
-    if(n.length == undefined) throw new Error("hibabakker")
-
-    return n.length
-} catch (error) {
-    console.log(error)
-    return "nincsneki"
-}
-
-//    if(n.length){
-//        return n.length
-//    } else {
-//        return "nincsneki"
-//    }
-}
-
-function betukeres(mondat,betu) {
-
-    let n = 0;
-    for (let i = 0; i < mondat.length; i++) {
-        let b = mondat[i];
-
-        if(b == betu) {
-            //n = n + 1
-            n++;
-        }
-    }
-    return n;
-}
-
 function abetukeres(mondat){
-    betukeres(mondat, "a");
-}
-
-function randomnullaszaz() {
-    // Math.random() 0.. 1 közötti töredék
-    return  Math.round(Math.random() *100)
+    lib.betukeres(mondat, "a");
 }
 
 function randomharminc(){
@@ -101,7 +50,7 @@ function randomharminc(){
 
     do {
         counter++
-        n = randomnullaszaz();
+        n = lib.randomnullaszaz();
 
         console.log(n); 
         
@@ -131,8 +80,10 @@ function számtobetu(n){
 // Kör terület számolása r alapján
 // Kör kerület számolása r alapján 
 
+// Minden átemelése a libbe :)☺☻
+
 function main() {
-    let result = számtobetu(69);
+    let result = randomharminc();
     console.log(result);
 }
 
