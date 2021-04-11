@@ -83,8 +83,26 @@ function számtobetu(n){
 // Minden átemelése a libbe :)☺☻
 
 function main() {
-    let result = randomharminc();
+    let result = fibonachi(10);
     console.log(result);
+}
+
+function fibonachi(n){
+
+    let a = 0
+    let b = 1;
+
+    let c = a + b
+
+    console.log(c)
+    
+
+ for (let i = 0; i < n; i++) {
+    a = b;
+    b = c
+    c = a + b;
+    console.log(c)
+ }
 }
 
 main()
