@@ -1,0 +1,15 @@
+{
+  "name": "alapok",
+  "version": "1.0.0",
+  "description": "Alapok",
+  "main": "fügvények_metódusok.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "alapok"
+  ],
+  "author": "Vas Bálint, Istenes Imre",
+  "license": "ISC"
+}
